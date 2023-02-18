@@ -1,0 +1,10 @@
+stages: 
+  - run
+
+
+run_sync: 
+  stage: run
+  image: registry.gitlab.com/learningcampus1/ncgroupsync:latest
+  script: 
+  - python3 src/main.py
+  when: manual
